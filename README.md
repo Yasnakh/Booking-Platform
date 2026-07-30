@@ -1,3 +1,64 @@
+# Travel Booking Platform
+
+## Overview
+
+Travel Booking Platform is a modern and responsive frontend application designed to provide users with a smooth travel reservation experience.
+
+The project focuses on building an intuitive interface where users can explore travel options, navigate through different booking categories, and interact with a realistic booking workflow.
+
+This project was developed using React.js and demonstrates frontend development practices including component-based architecture, responsive design, reusable UI elements, and client-side navigation.
+
+---
+
+## Features
+
+### User Interface
+
+- Modern and responsive design
+- Clean navigation system
+- Interactive user interface
+- Mobile-friendly layouts
+- Reusable React components
+
+### Booking Experience
+
+- Travel search interface
+- Flight booking pages
+- Hotel browsing pages
+- Train booking pages
+- Booking forms and user interactions
+- Detailed information views
+
+### User Management Interface
+
+- Login page
+- Registration page
+- User profile interface
+- Form validation and user feedback
+
+---
+
+## Technologies Used
+
+### Frontend
+
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### Development Tools
+
+- npm
+- Git
+- GitHub
+- Create React App
+
+---
+
+## Project Structure
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
