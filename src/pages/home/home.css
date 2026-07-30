@@ -1,0 +1,48 @@
+@import "../../components/header/header.css";
+
+.homeContainer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeTitle{
+  width: 1024px;
+  font-size: 20px;
+}
+
+.headerListItem.stays{
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 7px 7px;
+}
+
+@media only screen and (min-width: 530px) and (max-width: 700px){
+  
+  .homeTitle{
+    width: 520px;
+    font-size: 20px;
+  }
+  
+}
+
+@media only screen and (min-width: 701px) and (max-width: 880px){
+  
+  .homeTitle{
+    width: 680px;
+    font-size: 21px;
+  }
+  
+}
+
+@media only screen and (min-width: 881px) and (max-width: 1080px){
+  
+  .homeTitle{
+    width: 850px;
+    font-size: 22px;
+  }
+  
+}
+

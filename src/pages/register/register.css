@@ -1,0 +1,54 @@
+@import "../../components/header/header.css";
+
+.rheaderListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.rheaderListItem.stays{
+  border: 2px solid #003580;
+  border-radius: 25px;
+  padding: 7px 7px;
+}
+
+.Register {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regForm{
+  background-color: #ffffff;
+  padding: 0px 60px;
+  border-radius: 10px;
+}
+
+.regH1{
+  margin: 20px;
+  color: #0071c2;
+  text-align: center;
+}
+
+.regSpan{
+  color: #000000;
+  font-size: 13px;
+  text-align: center;
+}
+  
+.regButton{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: #0071c2;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}

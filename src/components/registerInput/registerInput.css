@@ -1,0 +1,67 @@
+.regInput{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 110px;
+}
+
+.regBlock{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.reglabel{
+    font-size: 12px;
+    color: gray;
+}
+
+.regBlock:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+.regBlock:invalid[focused="true"] ~ toast-container{
+    display: block;
+}
+
+.regBlock:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+.passStrength{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 529px){
+
+    .regInput{
+        display: inline-block;
+        flex-direction: column;
+        width: 300px;
+        height: 110px;
+    }
+    
+    .regBlock{
+        width: 230px;
+        padding: 15px;
+        margin: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    
+    .reglabel{
+        text-align: right;
+        margin: 10px 30px;
+        font-size: 12px;
+        color: gray;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .passStrength{
+        font-size: 13px;
+        font-weight: bold;
+    }
+}

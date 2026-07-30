@@ -1,0 +1,79 @@
+.navbar{
+  height: 50px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-weight: 500;
+}
+
+.navButton{
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #003580;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 529px){
+  
+  .navContainer{
+    width: 100%;
+    max-width: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+
+@media only screen and (min-width: 530px) and (max-width: 700px){
+  
+  .navContainer{
+    width: 100%;
+    max-width: 520px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 880px){
+  
+  .navContainer{
+    width: 100%;
+    max-width: 680px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+}
+
+@media only screen and (min-width: 881px) and (max-width: 1080px){
+  
+  .navContainer{
+    width: 100%;
+    max-width: 840px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+}

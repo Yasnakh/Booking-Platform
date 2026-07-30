@@ -1,0 +1,18 @@
+.dSelect{
+    padding: 15px;
+    margin: 10px 412px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 310px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 529px){
+
+    .dSelect{
+        padding: 15px;
+        margin: 10px 432px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        width: 285px;
+    }
+}

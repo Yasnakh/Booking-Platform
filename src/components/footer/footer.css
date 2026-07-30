@@ -1,0 +1,56 @@
+.footer{
+  width: 100%;
+  font-size: 12px;
+}
+
+.fLists{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  margin: 20px 0px 50px;
+}
+
+.fList{
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem{
+  margin-bottom: 10px;
+  color: #003580;
+  cursor: pointer;
+}
+
+.fText{
+  margin: 0px 100px 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 529px){
+
+  .footer{
+    width: 100%;
+    font-size: 8px;
+  }
+  
+  .fLists{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    margin: 20px 5px 50px;
+  }
+  
+  .fList{
+    list-style: none;
+    padding: 0px 5px;
+  }
+  
+  .fListItem{
+    margin-bottom: 10px;
+    color: #003580;
+    cursor: pointer;
+  }
+  
+  .fText{
+    margin: 0px 100px 10px;
+  }
+}

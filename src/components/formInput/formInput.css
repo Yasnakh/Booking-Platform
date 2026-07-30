@@ -1,0 +1,125 @@
+.formInput{
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    flex-direction: column;
+    width: 330px;
+}
+
+.formBlock{
+    width: 280px;
+    padding: 15px;
+    margin: 10px 80px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.formlabel{
+    text-align: right;
+    margin: 10px 70px;
+    font-size: 12px;
+    color: gray;
+}
+
+.formBlock:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+.formBlock:invalid[focused="true"] ~ toast-container{
+    display: block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 529px){
+
+    .formInput{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 110px;
+        margin: 0px 425px;
+    }
+    
+    .formBlock{
+        width: 250px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+       
+    .formlabel{
+        text-align: right;
+        font-size: 11px;
+        color: gray;
+    }
+
+}
+
+@media only screen and (min-width: 530px) and (max-width: 700px){
+
+    .formInput{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 110px;
+        margin: 0px 380px;
+    }
+    
+    .formBlock{
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+       
+    .formlabel{
+        text-align: right;
+        font-size: 12px;
+        color: gray;
+    }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 880px){
+
+    .formInput{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 110px;
+        margin: 0px 380px;
+    }
+    
+    .formBlock{
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    
+    .formlabel{
+        text-align: right;
+        font-size: 13px;
+        color: gray;
+    }
+
+}
+
+@media only screen and (min-width: 881px) and (max-width: 1080px){
+
+    .formInput{
+        display: flex;
+        align-items: center;
+        display: inline-block;
+        flex-direction: column;
+        width: 240px;
+        height: 110px;
+        margin: 10px 110px;
+    }
+    
+    .formBlock{
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    
+    .formlabel{
+        text-align: right;
+        font-size: 13px;
+        color: gray;
+    }
+
+}

@@ -1,0 +1,624 @@
+@import "../../components/header/header.css";
+
+.Trains {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.theaderContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.theaderContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.theaderList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.theaderListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.theaderListItem.trains{
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 7px 7px;
+}
+
+.activeLink{
+  background: black;
+}
+
+.theaderDesc {
+  margin: 20px 0px;
+}
+
+.theaderBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.theaderSearch {
+  height: 30px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.theaderIcon {
+  color: lightgray;
+}
+
+.theaderSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theaderSearchInput {
+  border: none;
+  outline: none;
+}
+
+.theaderSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.tdate {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.toptions {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.toptionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.toptionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.toptionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.toptionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+.trainsContainer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.trainsTitle{
+  width: 1024px;
+  font-size: 20px;
+}
+
+.trainsDetails{
+  width: 1024px;
+  font-size: 13.5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 529px){
+
+  .theaderContainer {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0px 100px 0px;
+  }
+
+  .theaderBtn {
+    width: 35px;
+    height: 25px;
+    font-size: 8px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 8px 5px;
+    cursor: pointer;
+  }
+
+  .theaderSearch {
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 290px;
+  }
+
+  .theaderSearchItem {
+    margin: 0px -3px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .theaderSearchItem>input {
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .theaderSearchText {
+    font-size: 5.5px;
+    color: lightgray;
+    cursor: pointer;
+  }
+
+  .theaderList {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+  .theaderListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .toptionText{
+    font-size: 10px;
+  }
+
+  .toptionItem {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .toptionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 9px;
+    color: black;
+  }
+  
+  .toptionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .tdate {
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    left: -50px;
+    z-index: 2;
+  }
+
+  .toptions {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+
+  .trainsTitle{
+    width: 310px;
+    font-size: 15px;
+  }
+
+  .trainsDetails{
+    width: 310px;
+    font-size: 10.5px;
+  }
+
+}
+
+
+  @media only screen and (min-width: 530px) and (max-width: 700px){
+
+    .theaderContainer {
+      width: 100%;
+      max-width: 520px;
+      margin: 20px 0px 100px 0px;
+    }
+  
+    .theaderSearch {
+      height: 30px;
+      background-color: white;
+      border: 3px solid #febb02;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 3px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      max-width: 510px;
+    }
+  
+    .theaderSearchItem {
+      margin: 0px 5px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  
+    .theaderSearchItem>input {
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .theaderSearchText {
+      font-size: 10px;
+      color: lightgray;
+      cursor: pointer;
+    }
+  
+    .theaderList {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+  
+    .theaderListItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+  
+    .toptionText{
+      font-size: 13px;
+    }
+  
+    .toptionItem {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+    
+    .toptionCounter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: black;
+    }
+    
+    .toptionCounterButton {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #0071c2;
+      color: #0071c2;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .tdate {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      z-index: 2;
+    }
+
+    .toptions {
+      z-index: 2;
+      position: absolute;
+      top: 50px;
+      left: 300px;
+      background-color: white;
+      color: gray;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    .trainsTitle{
+      width: 520px;
+      font-size: 20px;
+    }
+  
+    .trainsDetails{
+      width: 520px;
+      font-size: 13.5px;
+    }
+
+  }
+
+  @media only screen and (min-width: 701px) and (max-width: 880px){
+ 
+   .theaderContainer {
+     width: 100%;
+     max-width: 680px;
+     margin: 20px 0px 100px 0px;
+   }
+ 
+   .theaderSearch {
+     height: 30px;
+     background-color: white;
+     border: 3px solid #febb02;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding: 10px 0px;
+     border-radius: 5px;
+     position: absolute;
+     bottom: -25px;
+     width: 100%;
+     max-width: 680px;
+   }
+ 
+   .theaderSearchItem {
+     margin: 0px 5px;
+     display: flex;
+     align-items: center;
+     gap: 3px;
+   }
+ 
+   .theaderSearchItem>input {
+     font-size: 11px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+   }
+ 
+   .theaderSearchText {
+     font-size: 11px;
+     color: lightgray;
+     cursor: pointer;
+   }
+ 
+   .theaderList {
+     display: flex;
+     gap: 50px;
+     margin-bottom: 50px;
+   }
+ 
+   .theaderListItem {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     cursor: pointer;
+   }
+ 
+   .toptionText{
+     font-size: 14px;
+   }
+ 
+   .toptionItem {
+     width: 200px;
+     display: flex;
+     justify-content: space-between;
+     margin: 10px;
+   }
+   
+   .toptionCounter {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     font-size: 13px;
+     color: black;
+   }
+   
+   .toptionCounterButton {
+     width: 30px;
+     height: 30px;
+     border: 1px solid #0071c2;
+     color: #0071c2;
+     cursor: pointer;
+     background-color: white;
+   }
+
+   .tdate {
+     position: absolute;
+     top: 50px;
+     left: 220px;
+     z-index: 2;
+   }
+
+   .toptions {
+     z-index: 2;
+     position: absolute;
+     top: 50px;
+     left: 450px;
+     background-color: white;
+     color: gray;
+     border-radius: 5px;
+     -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+     box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+   }
+
+   .trainsTitle{
+     width: 680px;
+     font-size: 21px;
+   }
+ 
+   .trainsDetails{
+     width: 680px;
+     font-size: 14.5px;
+   }
+
+ }
+
+ @media only screen and (min-width: 881px) and (max-width: 1080px){
+ 
+  .theaderContainer {
+    width: 100%;
+    max-width: 840px;
+    margin: 20px 0px 100px 0px;
+  }
+
+  .theaderSearch {
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 830px;
+  }
+
+  .theaderSearchItem {
+    margin: 0px 5px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .theaderSearchItem>input {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .theaderSearchText {
+    font-size: 13px;
+    color: lightgray;
+    cursor: pointer;
+  }
+
+  .theaderList {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .theaderListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .toptionText{
+    font-size: 15px;
+  }
+
+  .toptionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .toptionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .toptionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .tdate {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+  }
+
+  .toptions {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+
+  .trainsTitle{
+    width: 850px;
+    font-size: 22px;
+  }
+
+  .trainsDetails{
+    width: 850px;
+    font-size: 15.5px;
+  }
+
+}

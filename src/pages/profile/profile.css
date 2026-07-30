@@ -1,0 +1,58 @@
+@import "../../components/header/header.css";
+
+.pheaderListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.pheaderListItem.profile{
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 7px 7px;
+}
+
+.MyProfile {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proForm{
+  width: 100%;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 0px 60px;
+  border-radius: 10px;
+}
+
+.proH1{
+  justify-content: center;
+  margin: 20px;
+  color: #0071c2;
+  text-align: center;
+}
+
+.proSpan{
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+}
+
+.proButton{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: #0071c2;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  justify-content: center;
+}

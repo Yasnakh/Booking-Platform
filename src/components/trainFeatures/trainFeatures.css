@@ -1,0 +1,149 @@
+.trainfeatured{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+  }
+  
+  .trainfeaturedItem{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    flex:1;
+    cursor: pointer;
+  }
+  
+  .trainfeaturedImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .trainfeaturedTitles{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 529px){
+
+    .trainfeatured{
+      width: 100%;
+      max-width: 310px;
+      display: inline-block;
+      z-index: 1;
+    }
+    
+    .trainfeaturedItem{
+      position: relative;
+      color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 200px;
+      flex:1;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .trainfeaturedTitles{
+      font-size: 11px;
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+    }
+    
+  }
+
+  @media only screen and (min-width: 530px) and (max-width: 700px){
+
+    .trainfeatured{
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      z-index: 1;
+    }
+    
+    .trainfeaturedItem{
+      position: relative;
+      color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 200px;
+      flex:1;
+      cursor: pointer;
+    }
+
+    .trainfeaturedTitles{
+      font-size: 13px;
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+    }
+    
+  }
+
+  @media only screen and (min-width: 701px) and (max-width: 880px){
+
+    .trainfeatured{
+      width: 100%;
+      max-width: 680px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      z-index: 1;
+    }
+    
+    .trainfeaturedItem{
+      position: relative;
+      color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 220px;
+      flex:1;
+      cursor: pointer;
+    }
+    
+    .trainfeaturedTitles{
+      font-size: 14px;
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+    }
+    
+  }
+
+  @media only screen and (min-width: 881px) and (max-width: 1080px){
+
+    .trainfeatured{
+      width: 100%;
+      max-width: 850px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      z-index: 1;
+    }
+    
+    .trainfeaturedItem{
+      position: relative;
+      color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 220px;
+      flex:1;
+      cursor: pointer;
+    }
+    
+    .trainfeaturedTitles{
+      font-size: 15px;
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+    }
+    
+  }

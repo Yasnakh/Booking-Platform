@@ -1,0 +1,625 @@
+@import "../../components/header/header.css";
+
+.Flights {
+    background-color: #003580;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .fheaderContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+  }
+  
+  .fheaderContainer.listMode {
+    margin: 20px 0px 0px 0px;
+  }
+  
+  .fheaderList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .fheaderListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .fheaderListItem.flights{
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    padding: 7px 7px;
+  }
+  
+  .activeLink{
+    background: black;
+  }
+  
+  .fheaderDesc {
+    margin: 20px 0px;
+  }
+  
+  .fheaderBtn {
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .fheaderSearch {
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+  }
+  
+  .fheaderIcon {
+    color: lightgray;
+  }
+  
+  .fheaderSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .fheaderSearchInput {
+    border: none;
+    outline: none;
+  }
+  
+  .fheaderSearchText {
+    color: lightgray;
+    cursor: pointer;
+  }
+  
+  .fdate {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+  }
+  
+  .foptions {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .foptionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .foptionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .foptionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .foptionCounterButton:disabled {
+    cursor: not-allowed;
+  }
+
+  .flightsContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .flightsTitle{
+    width: 1024px;
+    font-size: 20px;
+  }
+
+  .flightsDetails{
+    width: 1024px;
+    font-size: 13.5px;
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 529px){
+
+    .fheaderContainer {
+      width: 100%;
+      max-width: 300px;
+      margin: 20px 0px 100px 0px;
+    }
+  
+    .fheaderBtn {
+      width: 35px;
+      height: 25px;
+      font-size: 8px;
+      background-color: #0071c2;
+      color: white;
+      font-weight: 500;
+      border: none;
+      padding: 8px 5px;
+      cursor: pointer;
+    }
+
+    .fheaderSearch {
+      height: 30px;
+      background-color: white;
+      border: 3px solid #febb02;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 3px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      max-width: 290px;
+    }
+  
+    .fheaderSearchItem {
+      margin: 0px -3px;
+      display: flex;
+      align-items: center;
+      gap: 0px;
+    }
+  
+    .fheaderSearchItem>input {
+      font-size: 5px;
+      display: flex;
+      align-items: center;
+      gap: 0px;
+    }
+
+    .fheaderSearchText {
+      font-size: 5.5px;
+      color: lightgray;
+      cursor: pointer;
+    }
+  
+    .fheaderList {
+      display: inline-block;
+      margin-bottom: 50px;
+    }
+  
+    .fheaderListItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  
+    .foptionText{
+      font-size: 10px;
+    }
+  
+    .foptionItem {
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+    
+    .foptionCounter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 9px;
+      color: black;
+    }
+    
+    .foptionCounterButton {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #0071c2;
+      color: #0071c2;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .fdate {
+      position: absolute;
+      display: inline-block;
+      top: 50px;
+      left: -50px;
+      z-index: 2;
+    }
+
+    .foptions {
+      z-index: 2;
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      background-color: white;
+      color: gray;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    .flightsTitle{
+      width: 310px;
+      font-size: 15px;
+    }
+  
+    .flightsDetails{
+      width: 310px;
+      font-size: 10.5px;
+    }
+
+  }
+
+
+  @media only screen and (min-width: 530px) and (max-width: 700px){
+
+    .fheaderContainer {
+      width: 100%;
+      max-width: 520px;
+      margin: 20px 0px 100px 0px;
+    }
+  
+    .fheaderSearch {
+      height: 30px;
+      background-color: white;
+      border: 3px solid #febb02;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 3px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      max-width: 510px;
+    }
+  
+    .fheaderSearchItem {
+      margin: 0px 5px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  
+    .fheaderSearchItem>input {
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .fheaderSearchText {
+      font-size: 10px;
+      color: lightgray;
+      cursor: pointer;
+    }
+  
+    .fheaderList {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+  
+    .fheaderListItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+  
+    .foptionText{
+      font-size: 13px;
+    }
+  
+    .foptionItem {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+    
+    .foptionCounter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: black;
+    }
+    
+    .foptionCounterButton {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #0071c2;
+      color: #0071c2;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .fdate {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      z-index: 2;
+    }
+
+    .foptions {
+      z-index: 2;
+      position: absolute;
+      top: 50px;
+      left: 300px;
+      background-color: white;
+      color: gray;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    .flightsTitle{
+      width: 520px;
+      font-size: 20px;
+    }
+  
+    .flightsDetails{
+      width: 520px;
+      font-size: 13.5px;
+    }
+
+  }
+
+  @media only screen and (min-width: 701px) and (max-width: 880px){
+  
+    .fheaderContainer {
+      width: 100%;
+      max-width: 680px;
+      margin: 20px 0px 100px 0px;
+    }
+  
+    .fheaderSearch {
+      height: 30px;
+      background-color: white;
+      border: 3px solid #febb02;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 0px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      max-width: 680px;
+    }
+  
+    .fheaderSearchItem {
+      margin: 0px 5px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  
+    .fheaderSearchItem>input {
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .fheaderSearchText {
+      font-size: 11px;
+      color: lightgray;
+      cursor: pointer;
+    }
+  
+    .fheaderList {
+      display: flex;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+  
+    .fheaderListItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+  
+    .foptionText{
+      font-size: 14px;
+    }
+  
+    .foptionItem {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+    
+    .foptionCounter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: black;
+    }
+    
+    .foptionCounterButton {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #0071c2;
+      color: #0071c2;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .fdate {
+      position: absolute;
+      top: 50px;
+      left: 220px;
+      z-index: 2;
+    }
+
+    .foptions {
+      z-index: 2;
+      position: absolute;
+      top: 50px;
+      left: 450px;
+      background-color: white;
+      color: gray;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    .flightsTitle{
+      width: 680px;
+      font-size: 21px;
+    }
+  
+    .flightsDetails{
+      width: 680px;
+      font-size: 14.5px;
+    }
+
+  }
+
+  @media only screen and (min-width: 881px) and (max-width: 1080px){
+  
+    .fheaderContainer {
+      width: 100%;
+      max-width: 840px;
+      margin: 20px 0px 100px 0px;
+    }
+  
+    .fheaderSearch {
+      height: 30px;
+      background-color: white;
+      border: 3px solid #febb02;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 3px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      max-width: 830px;
+    }
+  
+    .fheaderSearchItem {
+      margin: 0px 5px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  
+    .fheaderSearchItem>input {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .fheaderSearchText {
+      font-size: 13px;
+      color: lightgray;
+      cursor: pointer;
+    }
+  
+    .fheaderList {
+      display: flex;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+  
+    .fheaderListItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+  
+    .foptionText{
+      font-size: 15px;
+    }
+  
+    .foptionItem {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+    
+    .foptionCounter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: black;
+    }
+    
+    .foptionCounterButton {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #0071c2;
+      color: #0071c2;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .fdate {
+      position: absolute;
+      top: 50px;
+      z-index: 2;
+    }
+
+    .foptions {
+      z-index: 2;
+      position: absolute;
+      top: 50px;
+      background-color: white;
+      color: gray;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    .flightsTitle{
+      width: 850px;
+      font-size: 22px;
+    }
+  
+    .flightsDetails{
+      width: 850px;
+      font-size: 15.5px;
+    }
+
+  }
+  
